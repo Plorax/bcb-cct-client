@@ -1,0 +1,9 @@
+<h1>TICKER</h1>
+<div style="scroll-behavior: smooth; overflow: hidden; height: 20px;">
+<mat-list dense>
+    <mat-list-item *ngFor="let item of tickerData">
+        {{item.ticker}} - {{item.currency}} = {{item.value}}
+    </mat-list-item>
+</mat-list>
+</div>
+<span>{{ this.getCurrentTime() }}</span>
